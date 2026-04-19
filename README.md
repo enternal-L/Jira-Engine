@@ -1,14 +1,14 @@
 # Jira + C++ Game Engine
 
-<img src="images/landing.png" alt="Jira landing" width="500" />
+<img src="images/landing.png" alt="Jira landing" width="400" />
 
 Jira is a browser-based editor and runner for a custom C++ 2D game engine.
 
 ## What Jira Does
 
-<img src="images/engine.png" alt="Jira engine" width="500" />
+<img src="images/engine.png" alt="Jira engine" width="600" />
 
-- Provides a file/resource workspace UI (`web/`) for engine assets and scripts.
+- Provides a workspace UI for editing engine assets and scripts.
 - Lets you create/edit/upload files and folders used by the engine.
 - Starts the wasm engine and shows stdout/stderr logs in the app.
 
@@ -23,7 +23,6 @@ Jira is a browser-based editor and runner for a custom C++ 2D game engine.
 - `web/` - React + Vite frontend (editor + wasm host).
 - `game_engine_marvincs/` - game engine source and Makefile for native/wasm builds.
 - `web/public/wasm/` - generated wasm artifacts consumed by the web app.
-- `web/public/resources/` - sample/default resources loaded by the web app.
 
 ## Runtime Flow (High Level)
 
