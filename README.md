@@ -1,9 +1,12 @@
 # Jira + C++ Game Engine
 
-Jira is a browser-based editor and runner for a custom C++ 2D game engine.  
-You edit project resources in the web UI, press **Run**, and the app launches the WebAssembly build of the engine in-canvas.
+<img src="images/landing.png" alt="Jira landing" width="500" />
+
+Jira is a browser-based editor and runner for a custom C++ 2D game engine.
 
 ## What Jira Does
+
+<img src="images/engine.png" alt="Jira engine" width="500" />
 
 - Provides a file/resource workspace UI (`web/`) for engine assets and scripts.
 - Lets you create/edit/upload files and folders used by the engine.
@@ -66,4 +69,3 @@ Open the local Vite URL, then press **Run** in the UI.
   - `resources/actor_templates/*.template`
   - `resources/images/<name>.png`
 - Files outside `resources/...` are not synced into engine MEMFS for runtime.
-
