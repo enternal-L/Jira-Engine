@@ -1,0 +1,3 @@
+[submodule "game_engine_marvincs"]
+	path = game_engine_marvincs
+	url = https://github.com/enternal-L/EECS498-engine
