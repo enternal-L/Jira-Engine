@@ -1,0 +1,14 @@
+{
+  "files": [
+    "game.config",
+    "rendering.config",
+    "scenes/basic.scene",
+    "component_types/SpriteRenderer.lua",
+    "component_types/Controller.lua",
+    "images/box1.png",
+    "images/box2.png",
+    "images/circle.png",
+    "actor_templates/falling_circle.template",
+    "actor_templates/falling_box.template"
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "configurations": [
+    {
+      "name": "Mac",
+      "includePath": [
+        "${workspaceFolder}/**",
+        "${workspaceFolder}/game_engine_marvincs",
+        "${workspaceFolder}/game_engine_marvincs/thirdparty",
+        "${workspaceFolder}/game_engine_marvincs/thirdparty/glm",
+        "${workspaceFolder}/game_engine_marvincs/thirdparty/rapidjson",
+        "${workspaceFolder}/game_engine_marvincs/thirdparty/lua",
+        "${workspaceFolder}/game_engine_marvincs/thirdparty/LuaBridge",
+        "${workspaceFolder}/game_engine_marvincs/thirdparty/box2d",
+        "${workspaceFolder}/game_engine_marvincs/thirdparty/SDL2",
+        "${workspaceFolder}/game_engine_marvincs/thirdparty/SDL_image",
+        "${workspaceFolder}/game_engine_marvincs/thirdparty/SDL_mixer",
+        "${workspaceFolder}/game_engine_marvincs/thirdparty/SDL_ttf"
+      ],
+      "browse": {
+        "path": [
+          "${workspaceFolder}/game_engine_marvincs",
+          "${workspaceFolder}/game_engine_marvincs/thirdparty"
+        ],
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "defines": [],
+      "compilerPath": "/usr/bin/clang++",
+      "cStandard": "c17",
+      "cppStandard": "c++17",
+      "intelliSenseMode": "macos-clang-arm64"
+    }
+  ],
+  "version": 4
+}

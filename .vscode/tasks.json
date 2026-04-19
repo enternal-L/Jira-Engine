@@ -1,0 +1,25 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "build",
+      "type": "shell",
+      "command": "clang++",
+      "args": [
+        "-I", "game_engine_marvincs/thirdparty",
+        "-std=c++17",
+        "-g",
+        "-O0",
+        "game_engine_marvincs/main.cpp",
+        "game_engine_marvincs/EngineDriver.cpp",
+        "-o",
+        "game_engine_linux"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": ["$gcc"]
+    }
+  ]
+}

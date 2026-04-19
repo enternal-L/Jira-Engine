@@ -1,0 +1,87 @@
+{
+	"actors": [
+		{
+			"name": "emitter",
+			"components": {
+				"1": {
+					"type": "Controller"
+				}
+			}
+		},
+		{
+			"name": "static_box1",
+			"components": {
+				"1": {
+					"type": "Rigidbody",
+					"body_type": "static",
+					"x": -2,
+					"y": 2
+				},
+				"2": {
+					"type": "SpriteRenderer",
+					"sprite": "box2"
+				}
+			}
+		},
+		{
+			"name": "static_box2",
+			"components": {
+				"1": {
+					"type": "Rigidbody",
+					"body_type": "static",
+					"x": -1,
+					"y": 2
+				},
+				"2": {
+					"type": "SpriteRenderer",
+					"sprite": "box2"
+				}
+			}
+		},
+		{
+			"name": "static_box3",
+			"components": {
+				"1": {
+					"type": "Rigidbody",
+					"body_type": "static",
+					"x": 0,
+					"y": 2
+				},
+				"2": {
+					"type": "SpriteRenderer",
+					"sprite": "box2"
+				}
+			}
+		},
+		{
+			"name": "static_box4",
+			"components": {
+				"1": {
+					"type": "Rigidbody",
+					"body_type": "static",
+					"x": 1,
+					"y": 2
+				},
+				"2": {
+					"type": "SpriteRenderer",
+					"sprite": "box2"
+				}
+			}
+		},
+		{
+			"name": "static_box5",
+			"components": {
+				"1": {
+					"type": "Rigidbody",
+					"body_type": "static",
+					"x": 2,
+					"y": 2
+				},
+				"2": {
+					"type": "SpriteRenderer",
+					"sprite": "box2"
+				}
+			}
+		}
+	]
+}

@@ -1,0 +1,16 @@
+Activate enscripten with
+
+source /Users/marvinjira/emsdk/emsdk/emsdk_env.sh
+
+Compile binary with MakeFile
+
+Bug Log:
+- Must allocate stack size to ~1kb to be able to upload wasm
+- Must find correct file to resolve to -> write more abt this later
+- Must use set loop emscripten to set game loop
+- Ignore "emscripten_set_main_loop_timing: 
+Cannot set timing mode for main loop since a main loop does not exist! Call emscripten_set_main_loop first to set one up."
+- For png files use "
+    -s SDL2_IMAGE_FORMATS=png \
+	-s USE_LIBPNG=1 \
+	-s USE_ZLIB=1 \ " in the linker to support png files

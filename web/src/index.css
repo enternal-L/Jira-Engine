@@ -1,0 +1,153 @@
+@import 'tailwindcss';
+
+body {
+  margin: 0;
+  min-height: 100svh;
+}
+
+/* —— Landing: Mac window chrome, colors aligned with editor (ResourcePanel / EditorApp) —— */
+.landing-mac {
+  /* Page / desktop — matches editor shell */
+  --mac-desktop: #09090b;
+  --mac-desktop-hi: #1f1f22;
+  --mac-desktop-lo: #050506;
+  /* Window frame & panels */
+  --mac-window-frame: #3c3c3c;
+  --mac-window-chrome: #252526;
+  --mac-window-bg: #1e1e1e;
+  --mac-titlebar-stripe-a: #2d2d30;
+  --mac-titlebar-stripe-b: #252526;
+  --mac-text: #cccccc;
+  --mac-text-muted: #858585;
+  --mac-link: #569cd6;
+  --mac-link-hover: #79c0ff;
+  /* Primary CTA — same family as editor Run */
+  --mac-btn-bg: rgba(6, 78, 59, 0.45);
+  --mac-btn-border: rgba(6, 95, 70, 0.8);
+  --mac-btn-text: #bbf7d0;
+  --mac-btn-bg-hover: rgba(6, 95, 70, 0.55);
+  --editor-chrome: #252526;
+  --editor-muted: #858585;
+  font-family:
+    -apple-system, BlinkMacSystemFont, 'Chicago', 'Charcoal', 'Geneva', 'Lucida Grande',
+    'Segoe UI', system-ui, sans-serif;
+}
+
+.landing-mac-desktop {
+  background-color: var(--mac-desktop);
+  background-image: linear-gradient(
+    180deg,
+    color-mix(in srgb, var(--mac-desktop-hi) 55%, transparent) 0%,
+    transparent 38%,
+    color-mix(in srgb, var(--mac-desktop-lo) 100%, transparent) 100%
+  );
+}
+
+.landing-mac-window {
+  border: 1px solid var(--mac-window-frame);
+  background: var(--mac-window-chrome);
+  box-shadow:
+    0 0 0 1px rgba(0, 0, 0, 0.35),
+    6px 12px 28px rgba(0, 0, 0, 0.45);
+}
+
+.landing-mac-titlebar {
+  display: grid;
+  grid-template-columns: 40px 1fr 40px;
+  align-items: center;
+  min-height: 28px;
+  padding: 2px 6px;
+  border-bottom: 1px solid var(--mac-window-frame);
+  background: repeating-linear-gradient(
+    90deg,
+    var(--mac-titlebar-stripe-a) 0,
+    var(--mac-titlebar-stripe-a) 1px,
+    var(--mac-titlebar-stripe-b) 1px,
+    var(--mac-titlebar-stripe-b) 2px
+  );
+  color: var(--mac-text);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  user-select: none;
+}
+
+.landing-mac-close {
+  width: 11px;
+  height: 11px;
+  border: 1px solid #5a5a5a;
+  background: linear-gradient(145deg, #3c3c3c 0%, #2a2a2a 100%);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.12);
+}
+
+.landing-mac-content {
+  background: var(--mac-window-bg);
+  color: var(--mac-text);
+}
+
+.landing-mac-code {
+  font-family: ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Monaco, Consolas, monospace;
+  font-size: 12px;
+  line-height: 1.35;
+  color: #d4d4d4;
+  background: #1a1a1a;
+  border: 1px solid #3c3c3c;
+  padding: 0.1em 0.35em;
+  border-radius: 2px;
+}
+
+.landing-mac-btn-default {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--mac-btn-text);
+  background: var(--mac-btn-bg);
+  border: 1px solid var(--mac-btn-border);
+  border-radius: 4px;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06);
+  padding: 0.35rem 1rem;
+  min-height: 28px;
+  transition:
+    background 0.08s ease,
+    border-color 0.08s ease;
+}
+
+.landing-mac-btn-default:hover {
+  background: var(--mac-btn-bg-hover);
+}
+
+.landing-mac-btn-default:active {
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.35);
+  transform: translate(1px, 1px);
+}
+
+.landing-mac-btn-default:focus-visible {
+  outline: 2px solid #34d399;
+  outline-offset: 2px;
+}
+
+.landing-mac-link {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--mac-link);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.landing-mac-link:hover {
+  color: var(--mac-link-hover);
+}
+
+.landing-mac-link:focus-visible {
+  outline: 2px solid #569cd6;
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+.landing-mac-footer {
+  font-size: 11px;
+  line-height: 1.4;
+  color: var(--editor-muted);
+  background: var(--editor-chrome);
+  border-top: 1px solid #3c3c3c;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04);
+}

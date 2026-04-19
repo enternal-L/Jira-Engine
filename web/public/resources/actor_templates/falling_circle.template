@@ -1,0 +1,14 @@
+{
+	"name": "falling_circle",
+	"components": {
+		"1": {
+			"type": "SpriteRenderer",
+			"sprite": "circle",
+			"sorting_order": -999
+		},
+		"2": {
+			"type": "Rigidbody",
+			"collider_type": "circle"
+		}
+	}
+}
